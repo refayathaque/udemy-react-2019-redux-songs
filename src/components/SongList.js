@@ -26,7 +26,7 @@ class SongList extends Component {
   };
 
   render() {
-    // console.log(this.props)
+    console.log(this.props)
     return (
       <div className="ui divided list">
         {this.renderList()}
@@ -45,4 +45,5 @@ const mapStateToProps = (state) => {
 export default connect(mapStateToProps, {
   // selectSong: selectSong
   selectSong
+  // 'connect' function is automatically calling the 'dispatch' function for us when we pass in an action creator (all happening behind the scenes)
 })(SongList);
